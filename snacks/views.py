@@ -7,7 +7,7 @@ from .serializers import SnackSerializer
 
 # Create your views here.
 from .models import Snack 
-class TodoViewSets(viewsets.ModelViewSet):
+class SnackViewSet(viewsets.ModelViewSet):
     queryset = Snack.objects.all()
     serializer_class = SnackSerializer
     permission_classes = [permissions.AllowAny]
